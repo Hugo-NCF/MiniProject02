@@ -1,6 +1,6 @@
 document.getElementById("email").value;
 const subscribe = document.getElementById("subscribe");
-
+const ok=document.getElementById("OK");
 /*function popupWindow() {
     const url='subscription-popup.html';
     const popup = "Popup"
@@ -9,6 +9,14 @@ const subscribe = document.getElementById("subscribe");
  
 }*/
 
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("openpopup");
+}
+function closePopup() {
+    popup.classList.remove("openpopup");
+}
 
 
 function validateEmail(email) {
@@ -16,10 +24,10 @@ function validateEmail(email) {
 
 
     if(email === ""|| !emailregex.test(email)) {
-        //alert("Please enter valid email") ;
+        alert("Please enter valid email") ;
         return false;
     }else{
-        //alert("subscription was successfull!");
+        openPopup()
         return true;
     }
 
@@ -28,12 +36,7 @@ subscribe.addEventListener("click", function (event) {
     const emailvalue = document.getElementById("email").value;
     console.log(emailvalue);
     validateEmail(emailvalue);
-    const outputElement = document.getElementById("popup-output");
-    if (validateEmail(emailvalue)===true) {
-        outputElement.textContent = `"${emailvalue}" Subsription was succesful`;
-        outputElement.style.color = "green";
-    } else {
-        outputElement.textContent = `"${emailvalue}" please enter valid email address`;
-        outputElement.style.color = "red";
-    }
+})
+ok.addEventListener("click", function (event) {
+    closePopup();
 })
