@@ -12,7 +12,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./cart.js"></script>
   </head>
   <body class="article-content">
     <section class="navbar">
@@ -32,7 +31,7 @@
 
       <ul class="navbar-icons">
         <li>
-          <button onclick="displayCart()"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+          <button onclick="createBox"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
         </li>
         <li>
           <a href=""><span class="material-symbols-outlined">person</span> Profile</a>
@@ -307,7 +306,6 @@
         <!-- Cart items will be dynamically added here -->
       </div>
       <div id="cart-empty" class="cart-empty">
-        <i class="fa-solid fa-cart-shopping" style="font-size: 3rem; color: antiquewhite;"></i>
         <p>Your cart is empty.</p>
       </div>
       <div class = "cart-footer">
