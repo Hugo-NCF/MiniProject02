@@ -32,7 +32,7 @@
 
       <ul class="navbar-icons">
         <li>
-          <button onclick="createBox"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+          <button onclick="displayCart()"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
         </li>
         <li>
           <a href=""><span class="material-symbols-outlined">person</span> Profile</a>
@@ -72,7 +72,7 @@
             Adidas Adizero Electric II (Black/Off-white)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $199.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/Adidas2-removebg-preview.png" alt="Adidas F50 Sparkfusion Elite Mid" />
@@ -80,7 +80,7 @@
             Adidas F50 Sparkfusion Elite Mid (Cloud White/Lucid Pink)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $249.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/Adidas3-removebg-preview.png" alt="Adidas F50 Sparkfusion Pro" />
@@ -88,7 +88,7 @@
             Adidas F50 Sparkfusion Pro (Violent Tone/Lucid Lemon/Purple Rush)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $239.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/AdidasPredatorRemoveBack.png" alt="Adidas Predator Elite Fold-Over Tongue FG" />
@@ -96,7 +96,7 @@
             Adidas Predator Elite Fold-Over Tongue FG (Core Black/Carbon/Lucid/Lemon)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $249.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/Adidas5-removebg-preview.png" alt="Adidas Predator Elite Fold-Over Tongue FG (Lucid Red/Core Black/Cloud White)" />
@@ -104,7 +104,7 @@
             Adidas Predator Elite Fold-Over Tongue FG (Lucid Red/Core Black/Cloud White)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $299.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/Adidas6-removebg-preview.png" alt="Adidas Copa Icon II FG Core (Black/Gold Metallic)" />
@@ -112,7 +112,7 @@
             Adidas Copa Icon II FG Core (Black/Gold Metallic)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $199.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
       </div>
       <h3 class="category-title primary-font"><span class="special-color">Nike</span> Cleats</h3>
@@ -123,7 +123,7 @@
             Nike Tiempo Maestro Elite (White/Black/Racer Blue/Pink Blast)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $219.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/nike2No.png" alt="Nike Mercurial Superfly 10 Elite" />
@@ -131,13 +131,13 @@
             Nike Mercurial Superfly 10 Elite (Racer Blue/White/Pink Blast)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $299.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
           <img src="./assets/nike3No.png" alt="Nike Phantom 6 High Elite" />
           <h3 class="primary-font" style="font-size: 1.1rem">Nike Phantom 6 High Elite (Racer Blue/White/Pink Blast)</h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $239.99</h4>
-          <button>Add to Cart</button>
+          <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
         </div>
         <div class="card">
             <img src="./assets/nike4No.png" alt="Nike Tiempo Maestro Elite FG (Black/Ice Blue)" />
@@ -145,7 +145,7 @@
                 Nike Tiempo Maestro Elite FG (Black/Ice Blue)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $229.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/nike5No.png" alt="Nike Tiempo Maestro Elite SE FG (Metallic Red Bronze/Metallic Rose Gold)" />
@@ -153,7 +153,7 @@
                 Nike Tiempo Maestro Elite SE FG (Metallic Red Bronze/Metallic Rose Gold)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $279.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/nike6No.png" alt="Nike Phantom 6 High Elite FG (Pistachio Frost/Hyper Orange)" />
@@ -161,7 +161,7 @@
                 Nike Phantom 6 High Elite FG (Pistachio Frost/Hyper Orange) 
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $229.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
       </div>
       <h3 class="category-title primary-font"><span class="special-color">Mizuno</span> Cleats</h3>
@@ -172,7 +172,7 @@
                 Mizuno Morelia NEO IV (White/Black/Red/Kangaroo Leather)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $289.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/mizuno-2-removebg-preview.png" alt="Mizuno Morelia NEO IV Beta Elite FG (Unity Sky)" />
@@ -180,7 +180,7 @@
                 Mizuno Morelia NEO IV Beta Elite FG (Unity Sky)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $299.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/mizuno-3-removebg-preview.png" alt="Mizuno Morelia NEO IV Turf (White/Gold)" />
@@ -188,7 +188,7 @@
                 Mizuno Morelia NEO IV Turf (White/Gold)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $279.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/mizuno-4-removebg-preview.png" alt="Mizuno Alpha II (Red/Black)" />
@@ -196,7 +196,7 @@
                 Mizuno Alpha II (Red/Black)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $249.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/mizuno-5-removebg-preview.png" alt="Mizuno Morelia II (Black/White/Red)" />
@@ -204,7 +204,7 @@
                 Mizuno Morelia II (Black/White/Red)
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $319.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
           <div class="card">
             <img src="./assets/mizuno-6-removebg-preview.png" alt="Mizuno Alpha II (Black/Iridescent)" />
@@ -212,7 +212,7 @@
                 Mizuno Alpha II (Black/Iridescent) 
             </h3>
             <h4 class="primary-font" style="font-size: 1rem">Price: $309.99</h4>
-            <button>Add to Cart</button>
+            <button onclick="addtoCart(Mizuno Alpha II (Black/Iridescent), $309.99, './assets/mizuno-6-removebg-preview.png')">Add to Cart</button>
           </div>
       </div>
     </section>
@@ -307,6 +307,7 @@
         <!-- Cart items will be dynamically added here -->
       </div>
       <div id="cart-empty" class="cart-empty">
+        <i class="fa-solid fa-cart-shopping" style="font-size: 3rem; color: antiquewhite;"></i>
         <p>Your cart is empty.</p>
       </div>
       <div class = "cart-footer">
