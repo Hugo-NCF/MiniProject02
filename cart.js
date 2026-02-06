@@ -4,7 +4,7 @@ let cart = []; // initialize an empty cart
 
 
 // Function to display the cart screen (when pressing the cart button)
-function displayCart() {
+function openCart() {
     document.getElementById("cart").classList.add("open");
     document.getElementById("cart-overlay").classList.add("open");
 }
