@@ -1,4 +1,4 @@
-//document.getElementById("email1").value;
+document.getElementById("email").value;
 const subscribe = document.getElementById("subscribe");
 
 function popupWindow() {
@@ -24,7 +24,7 @@ function validateEmail(email) {
 
 }
 subscribe.addEventListener("click", function (event) {
-    const emailvalue = document.getElementById("email1").value;
+    const emailvalue = document.getElementById("email").value;
     console.log(emailvalue);
     validateEmail(emailvalue);
     popupWindow()
