@@ -46,13 +46,3 @@ The bottom section of the page containing the JHA Cleats logo, two columns of na
 - HEX: #A6E22E
 - RGB: 166, 226, 46
 
-script:
-
-const sidebar = document.getElementById("sidebar");
-function showSidebar(){
-sidebar.classList.add("show");
-}
-function hideSidebar(){
-sidebar.classList.remove("show");
-}
-
