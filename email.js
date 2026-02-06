@@ -6,7 +6,7 @@ function popupWindow() {
     const popup = "Popup"
     const param ="width=600px, height=600px,left=200px,top=200px";
 
-    const newWindow = window.open(url,param,name);
+ 
 }
 
 
