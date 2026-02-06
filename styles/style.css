@@ -320,6 +320,20 @@ button:hover {
   opacity: 1; /* Set desired opacity here (0.0 to 1.0) */
   z-index: -1; /* Places the image behind the container's content */
 }
+.subscribe-button-container{
+ width:400px;
+    background: var(--blackcolor);
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.popup-img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
 
 footer {
   width: 99%;
