@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./cart.js"></script>
   </head>
   <body class="article-content">
     <section class="navbar">
@@ -31,7 +32,7 @@
 
       <ul class="navbar-icons">
         <li>
-          <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+          <button onclick="createBox"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
         </li>
         <li>
           <a href=""><span class="material-symbols-outlined">person</span> Profile</a>
@@ -295,5 +296,29 @@
             <p>&copy; 2026 JHA Cleats. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Cart SideBar -->
+     <div id="" class="cart-sidebar" onclick="closeCart"></div>
+     <div id="cart" class = "cart-sidebar">
+      <div class = "cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="close-btn" onclick="closeCart()">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div id="cart-empty" class="cart-empty">
+        <p>Your cart is empty.</p>
+      </div>
+      <div class = "cart-footer">
+        <div>class ="cart-total"
+          <span>Total:</span>
+          <span id="cart-total-amount">$0.00</span>
+        </div>
+        <button class=""cart-clear-btn" id="clear-cart-btn" onclick=""clearCart()>Clear Cart</button>
+      </div>
+    </div>
+
+    <script src="./cart.js"></script>
+
   </body>
 </html>
