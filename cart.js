@@ -41,24 +41,50 @@ function clearCart() {
   renderCart();
 }
 
+function payCart() {
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+  alert("Payment was made successfully!");
+  cart = [];
+  renderCart();
+  closeCart();
+}
+
+// Functions to change item quantity from the cart
+function increaseQuantity(index) {
+  cart[index].quantity += 1;
+  renderCart();
+}
+
+function decreaseQuantity(index) {
+  if (cart[index].quantity > 1) {
+    cart[index].quantity -= 1;
+  } else {
+    cart.splice(index, 1);
+  }
+  renderCart();
+}
+
 // Function to render the cart items and total price
 function renderCart() {
   const cartItemsContainer = document.getElementById("cart-items");
   const cartEmptyMessage = document.getElementById("cart-empty");
   const cartTotalPrice = document.getElementById("cart-total-price");
-  const cartClearBtn = document.getElementById("cart-clear-btn");
+  const cartBtnRow = document.getElementById("cart-btn-row");
   cartItemsContainer.innerHTML = "";
   if (cart.length === 0) {
     cartEmptyMessage.style.display = "flex";
-    cartClearBtn.style.display = "none";
+    cartBtnRow.style.display = "none";
     cartTotalPrice.textContent = "$0.00";
   } else {
     cartEmptyMessage.style.display = "none";
-    cartClearBtn.style.display = "block";
+    cartBtnRow.style.display = "flex";
     let total = 0;
 
     cart.forEach(function (item, index) {
- 
+
       const itemTotal = item.price * item.quantity;
       total += itemTotal;
 
@@ -68,7 +94,12 @@ function renderCart() {
         '<img src="' + item.image + '" alt="' + item.name + '" class="cart-item-img" />' +
         '<div class="cart-item-details">' +
           '<p class="cart-item-name">' + item.name + '</p>' +
-          '<p class="cart-item-price">$' + item.price.toFixed(2) + ' x ' + item.quantity + '</p>' +
+          '<p class="cart-item-price">$' + item.price.toFixed(2) + '</p>' +
+          '<div class="cart-item-quantity">' +
+            '<button class="qty-btn" onclick="decreaseQuantity(' + index + ')">−</button>' +
+            '<span class="qty-number">' + item.quantity + '</span>' +
+            '<button class="qty-btn" onclick="increaseQuantity(' + index + ')">+</button>' +
+          '</div>' +
         '</div>' +
         '<button class="cart-item-remove" onclick="removeFromCart(' + index + ')">' +
           '<i class="fa-solid fa-trash"></i>' +
@@ -97,3 +128,6 @@ function updateCartBadge() {
     badge.style.display = "none";
   }
 }
+
+// Run on page load so the cart starts in the correct state
+renderCart();
