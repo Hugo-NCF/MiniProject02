@@ -10,6 +10,7 @@ A website for selling soccer cleats from three top brands: Adidas, Nike, and Miz
 
 ## Website Link (Using Netlify)
 
+https://jhacleats2.netlify.app/
 
 
 ## Description
