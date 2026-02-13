@@ -7,7 +7,7 @@ const palindrome = (str) => {
   
   return cleanedStr === reversedStr;
 };
-alert("Palindrome module loaded.");
+
 
 const checkPalindrome = () => {
   const inputStr = document.getElementById("palindromeEntry").value;

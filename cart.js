@@ -1,5 +1,10 @@
-// add the default cart screen say your cart is empty
-let cart = []; // initialize an empty cart
+// Load cart from localStorage, or start with an empty array
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Function to save the cart to localStorage
+function saveCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 // Function to display the cart screen (when pressing the cart button)
 function openCart() {
@@ -112,6 +117,7 @@ function renderCart() {
   }
 
   updateCartBadge();
+  saveCart();
 }
 
 // Function to update the cart badge with the total number of items
